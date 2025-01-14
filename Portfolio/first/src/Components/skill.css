@@ -1,0 +1,126 @@
+.about {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .about-title {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .about-title h1 {
+    font-size: 50px;
+    color: rgb(102, 97, 231);
+  }
+  
+  .about-title span {
+    color: rgb(89, 24, 149);
+    font-size: 70px;
+  }
+  
+  .skills-container { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d33;
+    color: rgb(232, 213, 213);
+    font-weight: bold;
+    border: 2px solid rgb(48, 48, 138);
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100px;
+    height: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Media Query for Tablets (<= 768px) */
+  @media (max-width: 768px) {
+    .about-title {
+      width: 80%;
+    }
+  
+    .about-title h1 {
+      font-size: 40px;
+    }
+  
+    .about-title span {
+      font-size: 60px;
+    }
+  
+    .skills-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 30px;
+    }
+  
+    .skill-item {
+      width: 90px;
+      height: 110px;
+    }
+  
+    .skill-item img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  
+  /* Media Query for Phones (<= 480px) */
+  @media (max-width: 480px) {
+    .about-title h1 {
+      font-size: 30px;
+    }
+  
+    .about-title span {
+      font-size: 50px;
+    }
+  
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      font-size: 12px;
+      padding: 10px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  
+    .skill-item {
+      width: 40px;
+      height: 60px;
+    }
+  
+    .skill-item img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .about-title {
+      width: 90%;
+    }
+  }
+  

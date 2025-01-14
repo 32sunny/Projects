@@ -1,0 +1,174 @@
+.profile{
+    height: 300px;
+    width: 300px;
+   border-radius: 100%;
+}
+
+.myprofile{
+    height: 300px;
+    width: 300px;
+    border: 4px solid   rgb(9, 98, 98); 
+     border-radius: 100%; 
+}
+
+.Hero h1{
+    text-align: center;
+    width: 70%;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.Hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+.Hero h1 span{
+   background: linear-gradient(270deg , rgb(9, 132, 56) 15% , rgb(13, 41, 133) 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+ 
+    } 
+
+.Hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(205, 187, 187);
+    font-family: 'Courier New', monospace; 
+}
+.hero-action{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 24px;
+  font-weight: 500px;
+  margin-bottom: 50px;
+}
+
+.heroconnect{
+    font-size: 18px;
+    padding: 12px 40px;
+    border-radius: 50px;
+    cursor: pointer;
+    background: rgb(94,93,105);
+    background: linear-gradient(82deg, rgba(94,93,105,1) 0%, rgba(64,61,101,1) 0%, rgba(31,29,55,1) 0%, rgb(21, 171, 56) 28%, rgb(53, 0, 160) 100%);
+    transition: 0.5s;
+}
+
+.heroconnect a{
+  text-decoration: none;
+  color: white;
+}
+.heroconnect:hover{
+    transform: scale(1.05);
+}
+
+ 
+.My-resume{
+    font-size: 18px;
+    padding: 12px 2px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: rgb(43, 119, 125);
+    border:2px solid  rgb(43, 119, 125);
+    background: none;
+}
+
+.My-resume a{   
+    padding: 12px 40px;
+    border-radius: 50px;
+    color: rgb(43, 119, 125); ;
+}
+.My-resume a:hover{
+    color: rgb(140, 27, 138);
+}
+.My-resume:hover{
+    color: rgb(140, 27, 138);
+    border:2px solid rgb(140, 27, 138);
+}
+
+
+@media (max-width: 768px) {
+    .profile {
+      height: 200px;
+      width: 200px;
+    }
+  
+    .myprofile {
+      height: 200px;
+      width: 200px;
+      border: 3px solid rgb(9, 98, 98);
+    }
+  
+    .Hero h1 {
+      font-size: 40px;
+      width: 90%;
+    }
+  
+    .Hero p {
+      font-size: 16px;
+      width: 90%;
+    }
+  
+    .hero-action {
+      flex-direction: column;
+      gap: 15px;
+      font-size: 20px;
+    }
+  
+    .heroconnect {
+      font-size: 16px;
+      padding: 10px 30px;
+    }
+  
+    .My-resume {
+      font-size: 16px;
+      padding: 10px 5px;
+    }
+  
+    .My-resume a {
+      padding: 10px 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .profile {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .myprofile {
+      height: 150px;
+      width: 150px;
+    }
+  
+    .Hero h1 {
+      font-size: 30px;
+    }
+  
+    .Hero p {
+      font-size: 14px;
+    }
+  
+    .hero-action {
+      font-size: 18px;
+    }
+  
+    .heroconnect {
+      font-size: 14px;
+      padding: 8px 20px;
+    }
+  
+    .My-resume {
+      font-size: 14px;
+      padding: 8px 2px;
+    }
+  
+    .My-resume a {
+      padding: 8px 20px;
+    }
+  }
+  

@@ -1,0 +1,132 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  padding: 10px 20px;
+  position: relative;
+  box-shadow: 0px 0px 4px rgb(96, 88, 157);
+}
+
+.navbar p {
+  font-size: 38px;
+  font-weight: 600;
+  background: linear-gradient(270deg, rgb(5, 84, 34) 15%, rgb(115, 210, 211) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.navbar p:hover {
+  transform: scale(1.2);
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  cursor: pointer;
+  background: rgb(94,93,105);
+  background: linear-gradient(82deg, rgb(47, 42, 102) 0%, rgba(64,61,101,1) 0%, rgb(94, 161, 161) 0%, rgb(12, 88, 36) 28%, rgba(31,8,66,1) 100%);
+  z-index: 1000;
+}
+
+.navMenu li {
+  font-size: 15px;
+  font-weight: bold;
+  list-style: none;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+
+.navMenu li a {
+  text-decoration: none;
+  color: rgb(224, 221, 221);
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.navMenu li a:hover {
+  border-radius: 50px;
+  color: rgb(140, 236, 161);
+  transform: scale(1.1);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 2000;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease;
+}
+
+.connect {
+  display: none;
+}
+
+.scrollup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  opacity: 0.8;
+}
+
+.scrollup:hover {
+  background-color: #0056b3;
+  opacity: 1;
+}
+
+.scrollup:active {
+  transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+  .navMenu {
+    display: none;
+    flex-direction: column;
+    position: fixed; 
+    top: 60px; 
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 150px;
+    border-radius: 10px;
+    z-index: 1500; /* Ensures it stays above other content */
+  }
+
+  .navMenu.show {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .connect {
+    display: block;
+  }
+}
