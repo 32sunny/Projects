@@ -1,0 +1,504 @@
+[
+    {
+      "id": 1,
+      "name": "Premium Watch X1",
+      "brand": "TimeKeeper",
+      "category": "Watches",
+      "price": 299.99,
+      "description": "Elegant watch with premium leather strap and automatic movement.",
+      "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Smartphone Pro",
+      "brand": "TechGiant",
+      "category": "Phones",
+      "price": 899.99,
+      "description": "Latest smartphone with advanced camera system and 5G capability.",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+      "rating": 4.8
+    },
+    {
+      "id": 3,
+      "name": "Casual Denim Jacket",
+      "brand": "StyleCo",
+      "category": "Clothes",
+      "price": 79.99,
+      "description": "Classic denim jacket perfect for any casual outfit.",
+      "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9",
+      "rating": 4.3
+    },
+    {
+      "id": 4,
+      "name": "Wireless Earbuds Pro",
+      "brand": "AudioTech",
+      "category": "Electronics",
+      "price": 149.99,
+      "description": "Premium wireless earbuds with active noise cancellation.",
+      "image": "https://images.unsplash.com/photo-1590658268037-6bf12165a8df",
+      "rating": 4.6
+    },
+    {
+      "id": 5,
+      "name": "Classic Leather Watch",
+      "brand": "TimeKeeper",
+      "category": "Watches",
+      "price": 199.99,
+      "description": "Minimalist design with genuine leather strap.",
+      "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314",
+      "rating": 4.4
+    },
+    {
+      "id": 6,
+      "name": "Smart TV 55-inch",
+      "brand": "TechGiant",
+      "category": "Electronics",
+      "price": 699.99,
+      "description": "4K Ultra HD Smart TV with HDR support.",
+      "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1",
+      "rating": 4.7
+    },
+    {
+      "id": 7,
+      "name": "Slim Fit Blazer",
+      "brand": "StyleCo",
+      "category": "Clothes",
+      "price": 129.99,
+      "description": "Modern fit blazer perfect for formal occasions.",
+      "image": "https://images.unsplash.com/photo-1507679799987-c73779587ccf",
+      "rating": 4.5
+    },
+    {
+      "id": 8,
+      "name": "Gaming Laptop Pro",
+      "brand": "TechGiant",
+      "category": "Electronics",
+      "price": 1499.99,
+      "description": "High-performance gaming laptop with RGB keyboard.",
+      "image": "https://images.unsplash.com/photo-1603302576837-37561b2e2302",
+      "rating": 4.9
+    },
+    {
+      "id": 9,
+      "name": "Leather Messenger Bag",
+      "brand": "StyleCo",
+      "category": "Accessories",
+      "price": 89.99,
+      "description": "Genuine leather bag with multiple compartments.",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+      "rating": 4.4
+    },
+    {
+      "id": 10,
+      "name": "Smart Watch Series 5",
+      "brand": "TimeKeeper",
+      "category": "Watches",
+      "price": 349.99,
+      "description": "Advanced smartwatch with health monitoring.",
+      "image": "https://images.unsplash.com/photo-1579586337278-3befd40fd17a",
+      "rating": 4.7
+    },
+   {
+          "id": 11,
+          "name": "Wireless Gaming Mouse",
+          "brand": "TechGiant",
+          "category": "Electronics",
+          "price": 79.99,
+          "description": "High-precision wireless gaming mouse.",
+          "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46",
+          "rating": 4.6
+        },
+        {
+          "id": 12,
+          "name": "Premium Sunglasses",
+          "brand": "StyleCo",
+          "category": "Accessories",
+          "price": 159.99,
+          "description": "UV protected premium sunglasses.",
+          "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f",
+          "rating": 4.5
+        },
+        {
+          "id": 13,
+          "name": "Mechanical Keyboard",
+          "brand": "TechGiant",
+          "category": "Electronics",
+          "price": 129.99,
+          "description": "RGB mechanical keyboard with custom switches.",
+          "image": "https://images.unsplash.com/photo-1595225476474-87563907a212",
+          "rating": 4.8
+        },
+        {
+          "id": 14,
+          "name": "Winter Parka",
+          "brand": "StyleCo",
+          "category": "Clothes",
+          "price": 199.99,
+          "description": "Warm winter parka with faux fur hood.",
+          "image": "https://images.unsplash.com/photo-1544923246-77307dd654cb",
+          "rating": 4.6
+        },
+        {
+          "id": 15,
+          "name": "Bluetooth Speaker",
+          "brand": "AudioTech",
+          "category": "Electronics",
+          "price": 89.99,
+          "description": "Portable bluetooth speaker with deep bass.",
+          "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1",
+          "rating": 4.4
+        },
+        {
+          "id": 16,
+          "name": "Leather Wallet",
+          "brand": "StyleCo",
+          "category": "Accessories",
+          "price": 49.99,
+          "description": "Slim leather wallet with RFID protection.",
+          "image": "https://images.unsplash.com/photo-1627123424574-724758594e93",
+          "rating": 4.3
+        },
+        {
+          "id": 17,
+          "name": "4K Monitor",
+          "brand": "TechGiant",
+          "category": "Electronics",
+          "price": 399.99,
+          "description": "32-inch 4K monitor with HDR support.",
+          "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf",
+          "rating": 4.7
+        },
+        {
+          "id": 18,
+          "name": "Running Shoes",
+          "brand": "SportFit",
+          "category": "Shoes",
+          "price": 129.99,
+          "description": "Lightweight running shoes with cushioning.",
+          "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+          "rating": 4.5
+        },
+        {
+          "id": 19,
+          "name": "Wireless Charger",
+          "brand": "TechGiant",
+          "category": "Electronics",
+          "price": 39.99,
+          "description": "Fast wireless charger with LED indicator.",
+          "image": "https://images.unsplash.com/photo-1586816879360-004f5b0c51e3",
+          "rating": 4.4
+        },
+        {
+          "id": 20,
+          "name": "Dress Shirt",
+          "brand": "StyleCo",
+          "category": "Clothes",
+          "price": 59.99,
+          "description": "Cotton dress shirt with modern fit.",
+          "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157",
+          "rating": 4.5
+        },
+            {
+              "id": 21,
+              "name": "Smart Home Hub",
+              "brand": "TechGiant",
+              "category": "Electronics",
+              "price": 129.99,
+              "description": "Central hub for smart home devices.",
+              "image": "https://images.unsplash.com/photo-1558002038-1055907df827",
+              "rating": 4.6
+            },
+            {
+              "id": 22,
+              "name": "Canvas Sneakers",
+              "brand": "SportFit",
+              "category": "Shoes",
+              "price": 69.99,
+              "description": "Classic canvas sneakers for casual wear.",
+              "image": "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+              "rating": 4.3
+            },
+            {
+              "id": 23,
+              "name": "Wireless Keyboard",
+              "brand": "TechGiant",
+              "category": "Electronics",
+              "price": 89.99,
+              "description": "Slim wireless keyboard with long battery life.",
+              "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+              "rating": 4.5
+            },
+            {
+              "id": 24,
+              "name": "Leather Belt",
+              "brand": "StyleCo",
+              "category": "Accessories",
+              "price": 39.99,
+              "description": "Genuine leather belt with classic buckle.",
+              "image": "https://images.unsplash.com/photo-1553704571-c32e6602f351",
+              "rating": 4.4
+            },
+            {
+              "id": 25,
+              "name": "Gaming Headset",
+              "brand": "AudioTech",
+              "category": "Electronics",
+              "price": 149.99,
+              "description": "Surround sound gaming headset with mic.",
+              "image": "https://images.unsplash.com/photo-1599669454699-248893623440",
+              "rating": 4.8
+            },
+            {
+              "id": 26,
+              "name": "Winter Gloves",
+              "brand": "StyleCo",
+              "category": "Accessories",
+              "price": 29.99,
+              "description": "Touchscreen compatible winter gloves.",
+              "image": "https://images.unsplash.com/photo-1516762689617-e1cffcef479d",
+              "rating": 4.2
+            },
+            {
+              "id": 27,
+              "name": "Portable SSD",
+              "brand": "TechGiant",
+              "category": "Electronics",
+              "price": 159.99,
+              "description": "1TB portable SSD with USB-C.",
+              "image": "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b",
+              "rating": 4.7
+            },
+            {
+              "id": 28,
+              "name": "Hiking Boots",
+              "brand": "SportFit",
+              "category": "Shoes",
+              "price": 149.99,
+              "description": "Waterproof hiking boots with grip sole.",
+              "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0",
+              "rating": 4.6
+            },
+            {
+              "id": 29,
+              "name": "Wool Sweater",
+              "brand": "StyleCo",
+              "category": "Clothes",
+              "price": 89.99,
+              "description": "Warm wool blend sweater for winter.",
+              "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9",
+              "rating": 4.5
+            },
+            {
+              "id": 30,
+              "name": "Webcam Pro",
+              "brand": "TechGiant",
+              "category": "Electronics",
+              "price": 79.99,
+              "description": "1080p webcam with built-in microphone.",
+              "image": "https://images.unsplash.com/photo-1587826080692-f439cd0b70da",
+              "rating": 4.4
+            },
+            {
+              "id": 31,
+              "name": "Classic Watch",
+              "brand": "TimeKeeper",
+              "category": "Watches",
+              "price": 249.99,
+              "description": "Classic analog watch with date display.",
+              "image": "https://images.unsplash.com/photo-1524592094714-0f0654e20314",
+              "rating": 4.6
+            },
+            {
+              "id": 32,
+              "name": "Laptop Backpack",
+              "brand": "StyleCo",
+              "category": "Accessories",
+              "price": 69.99,
+              "description": "Water-resistant laptop backpack.",
+              "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+              "rating": 4.5
+            },
+            {
+              "id": 33,
+              "name": "Smart Doorbell",
+              "brand": "TechGiant",
+              "category": "Electronics",
+              "price": 199.99,
+              "description": "HD video doorbell with night vision.",
+              "image": "https://images.unsplash.com/photo-1558002038-1055907df827",
+              "rating": 4.7
+            },
+            {
+              "id": 34,
+              "name": "Dress Shoes",
+              "brand": "StyleCo",
+              "category": "Shoes",
+              "price": 159.99,
+              "description": "Leather dress shoes for formal occasions.",
+              "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0",
+              "rating": 4.6
+            },
+            {
+              "id": 35,
+              "name": "Wireless Router",
+              "brand": "TechGiant",
+              "category": "Electronics",
+              "price": 129.99,
+              "description": "Dual-band WiFi 6 router.",
+              "image": "https://images.unsplash.com/photo-1558002038-1055907df827",
+              "rating": 4.5
+            },
+            {
+              "id": 36,
+              "name": "Sport Watch",
+              "brand": "TimeKeeper",
+              "category": "Watches",
+              "price": 179.99,
+              "description": "Sports watch with heart rate monitor.",
+              "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+              "rating": 4.4
+            },
+            {
+              "id": 37,
+              "name": "Denim Jeans",
+              "brand": "StyleCo",
+              "category": "Clothes",
+              "price": 79.99,
+              "description": "Classic fit denim jeans.",
+              "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9",
+              "rating": 4.3
+            },
+            {
+              "id": 38,
+              "name": "Tablet Pro",
+              "brand": "TechGiant",
+              "category": "Electronics",
+              "price": 649.99,
+              "description": "11-inch tablet with stylus support.",
+              "image": "https://images.unsplash.com/photo-1587033411391-5d9e51cce126",
+              "rating": 4.8
+            },
+            {
+              "id": 39,
+              "name": "Running Jacket",
+              "brand": "SportFit",
+              "category": "Clothes",
+              "price": 89.99,
+              "description": "Lightweight running jacket with reflective details.",
+              "image": "https://images.unsplash.com/photo-1544923246-77307dd654cb",
+              "rating": 4.5
+            },
+            {
+              "id": 40,
+              "name": "Wireless Mouse",
+              "brand": "TechGiant",
+              "category": "Electronics",
+              "price": 49.99,
+              "description": "Ergonomic wireless mouse.",
+              "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46",
+              "rating": 4.4
+            },
+            
+                {
+                  "id": 41,
+                  "name": "Luxury Watch",
+                  "brand": "TimeKeeper",
+                  "category": "Watches",
+                  "price": 999.99,
+                  "description": "Premium automatic watch with sapphire crystal.",
+                  "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+                  "rating": 4.9
+                },
+                {
+                  "id": 42,
+                  "name": "Casual Shirt",
+                  "brand": "StyleCo",
+                  "category": "Clothes",
+                  "price": 49.99,
+                  "description": "Comfortable casual shirt for everyday wear.",
+                  "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157",
+                  "rating": 4.3
+                },
+                {
+                  "id": 43,
+                  "name": "Smart Scale",
+                  "brand": "TechGiant",
+                  "category": "Electronics",
+                  "price": 59.99,
+                  "description": "WiFi connected smart scale with body composition.",
+                  "image": "https://images.unsplash.com/photo-1558002038-1055907df827",
+                  "rating": 4.5
+                },
+                {
+                  "id": 44,
+                  "name": "Travel Backpack",
+                  "brand": "StyleCo",
+                  "category": "Accessories",
+                  "price": 129.99,
+                  "description": "Expandable travel backpack with USB port.",
+                  "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62",
+                  "rating": 4.7
+                },
+                {
+                  "id": 45,
+                  "name": "Fitness Tracker",
+                  "brand": "TechGiant",
+                  "category": "Electronics",
+                  "price": 89.99,
+                  "description": "Advanced fitness tracker with GPS.",
+                  "image": "https://images.unsplash.com/photo-1557438159-51eec7a6c9e8",
+                  "rating": 4.6
+                },
+                {
+                  "id": 46,
+                  "name": "Winter Boots",
+                  "brand": "SportFit",
+                  "category": "Shoes",
+                  "price": 139.99,
+                  "description": "Insulated winter boots with grip sole.",
+                  "image": "https://images.unsplash.com/photo-1520639888713-7851133b1ed0",
+                  "rating": 4.5
+                },
+                {
+                  "id": 47,
+                  "name": "Desk Lamp",
+                  "brand": "TechGiant",
+                  "category": "Electronics",
+                  "price": 49.99,
+                  "description": "LED desk lamp with adjustable brightness.",
+                  "image": "https://images.unsplash.com/photo-1558002038-1055907df827",
+                  "rating": 4.4
+                },
+       
+    {
+      "id": 48,
+      "name": "Leather Jacket",
+      "brand": "StyleCo",
+      "category": "Clothes",
+      "price": 199.99,
+      "description": "Classic leather jacket with quilted lining.",
+      "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5",
+      "rating": 4.8
+    },
+    {
+      "id": 49,
+      "name": "Smart Bulb Set",
+      "brand": "TechGiant",
+      "category": "Electronics",
+      "price": 79.99,
+      "description": "Set of 4 smart LED bulbs with app control.",
+      "image": "https://images.unsplash.com/photo-1558002038-1055907df827",
+      "rating": 4.5
+    },
+    {
+      "id": 50,
+      "name": "Sport Sunglasses",
+      "brand": "SportFit",
+      "category": "Accessories",
+      "price": 89.99,
+      "description": "Lightweight sport sunglasses with UV protection.",
+      "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f",
+      "rating": 4.6
+    }
+  ]
