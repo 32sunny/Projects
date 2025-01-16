@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
-import profile_pic from '../assets/profile_pic.png';
+import DP from '../assets/Dp.png'
 import resume from '../assets/resume.pdf';
 
 const Hero = () => {
@@ -8,16 +8,14 @@ const Hero = () => {
   return (
     <div id='Home' className="Hero">
       <div className="myprofile">
-        <img src={profile_pic} className="profile" alt="Profile" />
+        <img src={DP} className="profile" alt="Profile" />
       </div>
 
       <h1>
-        <span>I'm Sunny Mourya</span>, Frontend Developer With B.Com Degree
+        <span> Hi,I'm Sunny Mourya</span>, Full-Stack Developer With B.Com Degree
       </h1>
       <p>
-        "I graduated with a degree in B.Com, but I wasn't happy with my field. 
-        So, I decided to try something new. It was risky, but my passion for learning 
-        gave me the courage to pursue it, and today I am a frontend developer."
+      "I graduated with a degree in B.Com, but I wasn’t satisfied with my chosen field. Determined to explore new opportunities, I decided to venture into coding. Although it was challenging at first, my passion for learning and the excellent guidance from Masai School kept me motivated. Today, I am proud to call myself a Full-Stack Developer."
       </p>
       <div className="hero-action">
         <div className="heroconnect">  <a href="#contact">Connect With Me</a></div>

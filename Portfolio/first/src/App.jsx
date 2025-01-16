@@ -7,6 +7,7 @@ import About from './Components/About'
 import ContactForm from './Components/Contact'
 import Footer from './Components/Footer'
 import Skills from './Components/Skills'
+import Projects from './Components/Projects'
 function App() {
 
   return (
@@ -15,6 +16,7 @@ function App() {
   <Hero/>
   <About  />
   <Skills/>
+  <Projects/>
   <ContactForm/>
   <Footer/>
     </>

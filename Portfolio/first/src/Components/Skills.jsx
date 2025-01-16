@@ -69,7 +69,7 @@ const Skills = () => {
         <div  className="about">
     <div id='Skills'  className="about-title">
       
-    <h1><span>Professional</span> Skillset</h1>
+    <h1>Professional Skillset</h1>
 
     </div>
     <div  className="skills-container">
@@ -84,7 +84,7 @@ const Skills = () => {
 
    
 
-    <h1><span>Tool</span> I Use</h1>
+    <h2 className='tools'>Tools Use</h2>
     <div className="skills-container">
     {tools.map((item, id) => (
         <div key={id} className="skill-item" style={{ borderColor: item.borderColor }}>

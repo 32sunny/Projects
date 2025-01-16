@@ -1,32 +1,36 @@
 .about{
    display: flex;
-   flex-direction: column;
    justify-content: space-between;
    align-items: center;
+
 }
 
 .about-title{
    width: 50%;
    text-align: center;
 }
+
 .about-title h1{
     font-size: 50px;
-    color: rgb(102, 97, 231);
+    color: rgb(18, 241, 226);
 }
 
-.about-title span{
-    color: rgb(89, 24, 149);
-   
+.about-title h1 span{
+    color: rgb(0, 0, 0);
     font-size: 70px;
 }
+
+.tools{
+  color: rgb(18, 241, 226);
+   font-weight: 600px;
+  font-size: 40px;
+} 
+
 .about-selection{
     padding:50px 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
-    
-   
 }
 
 .about-right{
@@ -47,6 +51,41 @@
     box-shadow: 0 4px 8px rgba(81, 89, 196, 0.3); 
 }
 
+.education{
+
+  text-align: center ;
+   h2{
+    color: aqua;
+    font-size: 36px;
+    padding: 50px 0px;
+   }
+   ul{
+    display: flex;
+gap: 50px;
+
+    li{
+      background-image: url('https://thumbs.dreamstime.com/b/black-pencil-drawing-line-white-background-336130587.jpg');
+      background-size: cover;
+      background-repeat: none;
+      background-position: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: overlay; 
+      width: 300px;
+      list-style: none;
+      padding: 20px;
+      color: bisque;
+      cursor: pointer;
+      transition: 0.5s;
+      strong{
+        color: rgb(28, 241, 117);
+        font-size: 20px;
+      }
+    }
+   }
+   li:hover{
+     transform: scale(1.1);
+   }
+}
 
 
 
@@ -98,7 +137,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 320px) {
   .about-title h1 {
     font-size: 30px;
   }
@@ -130,4 +169,19 @@
     width: 60px;
     height: 60px;
   }
+
+  .education h2 {
+    font-size: 24px; 
+  }
+  
+  .education ul {
+    flex-direction: column;
+    gap: 20px; 
+    width: 320px;
+  }
+  
+  .education ul li {
+    padding: 15px;
+  }
 }
+

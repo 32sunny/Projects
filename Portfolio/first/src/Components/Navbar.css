@@ -5,13 +5,21 @@ html {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  background-image: url('https://www.shutterstock.com/image-photo/blank-black-corporate-stationery-on-600nw-1051434977.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  position: sticky;
+  top:0px ;
   margin: 0;
-  padding: 10px 20px;
-  position: relative;
+  z-index: 1000;
+  padding: 10px 100px;
   box-shadow: 0px 0px 4px rgb(96, 88, 157);
-}
 
+}
+ 
 .navbar p {
   font-size: 38px;
   font-weight: 600;
@@ -29,6 +37,7 @@ html {
 
 .navMenu {
   display: flex;
+ 
   align-items: center;
   border-radius: 50px;
   cursor: pointer;
@@ -65,7 +74,7 @@ html {
   cursor: pointer;
   gap: 5px;
   position: fixed;
-  top: 10px;
+  top: 20px;
   right: 20px;
   z-index: 2000;
 }
@@ -128,5 +137,11 @@ html {
 
   .connect {
     display: block;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .navbar {
+       padding: 0;
   }
 }

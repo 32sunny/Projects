@@ -1,13 +1,28 @@
+
+  /* Keyframes for the fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
 .profile{
-    height: 300px;
-    width: 300px;
+    height: inherit;
    border-radius: 100%;
+   border: 4px solid   rgb(9, 98, 98); 
 }
 
 .myprofile{
+  margin-top: 50px;
     height: 300px;
     width: 300px;
-    border: 4px solid   rgb(9, 98, 98); 
+    animation: fadeIn 2s ease-out forwards;
      border-radius: 100%; 
 }
 
@@ -16,6 +31,7 @@
     width: 70%;
     font-size: 70px;
     font-weight: 600;
+    animation: fadeIn 2s ease-out forwards;
 }
 
 .Hero{
@@ -23,14 +39,22 @@
     align-items: center;
     flex-direction: column;
     gap: 35px;
+    background-image: url('https://www.shutterstock.com/image-photo/blank-black-corporate-stationery-on-600nw-1051434977.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  animation: fadeIn 2s ease-out forwards;
+
 }
 .Hero h1 span{
    background: linear-gradient(270deg , rgb(9, 132, 56) 15% , rgb(13, 41, 133) 100%);
    background-clip: text;
    -webkit-background-clip: text;
    -webkit-text-fill-color: transparent;
- 
+   animation: fadeIn 2s ease-out forwards;
     } 
+
 
 .Hero p{
     width: 50%;
@@ -38,6 +62,7 @@
     font-size: 18px;
     color: rgb(205, 187, 187);
     font-family: 'Courier New', monospace; 
+    animation: fadeIn 2s ease-out forwards;
 }
 .hero-action{
   display: flex;
@@ -46,6 +71,7 @@
   font-size: 24px;
   font-weight: 500px;
   margin-bottom: 50px;
+  animation: fadeIn 2s ease-out forwards;
 }
 
 .heroconnect{
