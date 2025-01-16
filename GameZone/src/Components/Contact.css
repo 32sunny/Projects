@@ -1,0 +1,144 @@
+
+.abouthero {
+    background: url(https://cdn.pixabay.com/photo/2020/02/16/20/29/nyc-4854718_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+    height: 40vh;
+    opacity: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    margin-bottom: 30px;
+  }
+  
+  .abouthero h2,
+  .abouthero p {
+    color: #ffefef;
+    font-size: 36px;
+  }
+  
+  .aboutbox {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  
+  }
+  
+  .videosec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .videosec video {
+    width: 60%;
+    height: 600px;
+    border-radius: 20px;
+    margin: 20px 0px;
+  }
+  
+  .videosec h1 a {
+    color: #088178;
+  }
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 47%;
+  }
+  
+  .info ul li {
+    margin-bottom: 7px;
+  }
+  
+  .map {
+    width: 47%;
+  }
+  
+  .map img {
+    width: 100%;
+    height: 360px;
+  }
+  
+  .cform {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 80px auto;
+  }
+  
+  .cinput {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .cinput:focus {
+    border: 0px;
+  }
+  
+  .people {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .p1 img {
+    /* width: 179px;
+    /* height: 20px; */
+    /* padding-right: 26px; */
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+  
+  
+  }
+  
+  .info button {
+    width: 145px;
+    border-radius: 11px;
+  }
+  
+  .p1 {
+    display: flex;
+    padding: 20px;
+  
+  }
+  
+  
+.shopbtn {
+    background-image: url("images/buttonbg.png");
+    background-color: rgb(221, 96, 18);
+    color: whitesmoke;
+    border: 2px solid transparent;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 13px;
+    padding: 16px 43px;
+    transition: 0.4s ease;
+  
+  }
+  
+  .shopbtn:hover {
+    background-color: whitesmoke;
+    color: rgb(221, 96, 18);
+    border: 2px solid rgb(221, 96, 18);
+    cursor: pointer;
+  }

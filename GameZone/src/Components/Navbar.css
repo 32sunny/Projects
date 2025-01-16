@@ -20,7 +20,6 @@
 .navbar p {
   font-size: 38px;
   font-weight: 600;
-  background: linear-gradient(270deg, rgb(5, 84, 34) 15%, rgb(115, 210, 211) 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -37,8 +36,8 @@
   align-items: center;
   border-radius: 50px;
   cursor: pointer;
-  background: rgb(94,93,105);
-  background: linear-gradient(82deg, rgb(47, 42, 102) 0%, rgba(64,61,101,1) 0%, rgb(94, 161, 161) 0%, rgb(12, 88, 36) 28%, rgba(31,8,66,1) 100%);
+  /* background: rgb(94,93,105); */
+ 
   z-index: 1000;
 }
 

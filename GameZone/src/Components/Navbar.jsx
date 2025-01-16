@@ -16,6 +16,7 @@ export const Navbar = () => {
       <div className={`navMenu ${menuOpen ? 'show' : ''}`}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/About">About</Link></li>
+        <li><Link to="/Contact">Contact us</Link></li>
       </div>
       <div className="burger" onClick={toggleMenu}>
         <div></div>

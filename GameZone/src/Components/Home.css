@@ -4,9 +4,9 @@
     gap: 50px;
     justify-content: center;
     padding: 100px;
-    background-color: #000000; 
+    
   }
-  
+
   .card {
     background-color: rgb(0, 0, 0);
     border-radius: 8px;
@@ -16,6 +16,7 @@
     cursor: pointer;
     width: 250px;
     transition: transform 0.2s ease-in-out;
+    /* animation: fadeIn 5s ease-out forwards; */
   }
   
   .card:hover {
@@ -57,23 +58,26 @@
   .button-container { 
     padding: 20px  100px; 
     display: flex;
+    z-index: 1000 ;
     justify-content: space-between;
-   
+    position: sticky;
+    top: 50px;
     gap: 30px;
+
     background-color: rgb(34, 34, 51);
   }
   .button-container button{
     background-color: #05050b;
-    color: white;
     border: none;
     box-shadow: 0px 0px 4px #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    color: #ffffff;
     transition: background-color 0.3s ease;
   }
-  
+ 
  
 
   .button-container button:hover {
@@ -92,35 +96,34 @@
     z-index: 1000;
     width: 300px; 
     height: 650px ;
-    background-color: #25415f;
-    padding: 20px;
-    border-radius: 8px;
+    background-color: #e9edf1;
+    padding: 10px 20px;
+    animation: filterin 0.5s ease-out forwards;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    justify-content: space-between;
+    justify-content: space-around;
   }
  
   
+
   .popup .span {
-    margin-bottom: 20px;
+    color: white;
     border-radius: 8px;
     font-size: 25px;
     background-color: #050f51;
-    padding: 5px 30px;
+    padding: 5px 10px;
   }
 
     .priceSet{
       display: flex;
        justify-content: space-between;
-       background-color: #25415f;
+       /* background-color: #25415f; */
     }
 
-    .priceSet span{
-      background-color: #25415f;
-    }
+  
 
   .nav_filter{
-    color:  #ffffff;
-    background-color: #25415f;
+    color:  #040404;
+    /* background-color: #ffffff; */
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -129,7 +132,7 @@
 
 .brands{
 
-  background-color: #25415f;
+  /* background-color: #ffffff; */
   display: grid;  
   grid-template-columns: repeat(3,1fr);
   gap: 10px;
@@ -139,7 +142,7 @@
 }
 .brands #brand{
   font-size: 15px;
-  color: rgb(177, 169, 169);
+  color: rgb(255, 242, 242);
   background-color: brown;
   width: auto;
   cursor: pointer;
@@ -162,9 +165,10 @@
 
 
 .nav_filter #category {
-  background-color: #cac3c3;
+  /* background-color: #cac3c3; */
   color: rgb(55, 47, 47);
   border: none;
+  border: 1px solid black;
   width: 100%;
   padding: 10px 20px;
   border-radius: 5px;
@@ -193,12 +197,12 @@
   }
   
   .search{
-    color: white;
+    color: rgb(0, 0, 0);
     width: 500px;
   }
 
   .showMore{
-    color: white; 
+    color: rgb(0, 0, 0); 
     padding: 9px;
   }
 
@@ -272,8 +276,8 @@
     width: 400px;
   }
 
-  .buyNow{
-    color: white;
+  .buydetails .buyNow{
+    color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 5px;
     font-size: 15px;
@@ -284,3 +288,183 @@
   .buyNow:hover{
     transform: scale(0.9); 
   }
+
+  .jsut_style {
+    display: flex;
+    justify-content: end;
+    height: 600px;
+    width: 100%;
+    background-image: url('https://st.depositphotos.com/1001877/3814/i/450/depositphotos_38143799-stock-photo-e-commerce-shopping-cart-with.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: overlay;
+   
+  }
+  
+  .jsut_style p {
+    padding: 100px 200px;
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 4s ease-out forwards;
+  }
+  
+  /* Keyframes for the fade-in effect */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  /* Keyframes for the fade-in effect */
+  @keyframes filterin {
+    0% {
+      opacity: 0;
+      transform: translatex(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translatex(0);
+    }
+  }
+
+
+  
+.banners-cont {
+  width: 90%;
+  margin: 0px auto;
+}
+
+
+.banners {
+
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+
+.banner {
+  height: 45vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  width: 48%;
+  margin: 30px 0px;
+}
+
+.banner h4 {
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.banner h2 {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.banner .explorebtn {
+  width: 25%;
+  font-size: 12px;
+  text-align: center;
+  padding: 16px 9px;
+  margin: 10px 0px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.banner:hover .explorebtn {
+  background-color: #088178;
+  border: 1px solid #088178;
+  color: black;
+}
+
+.banner2 {
+  height: 43vh;
+  padding: 25px;
+  transition: 0.3s ease;
+  width: 31%;
+}
+
+.banner2:hover {
+  box-shadow: 0px 4px 8px #191919;
+  ;
+}
+
+.banner:nth-child(1) {
+  background: url(https://img.freepik.com/premium-photo/asian-happy-woman-with-perfect-body-posing-studio-luxury-fashionable-female-model-sexy-dress-with-shopping-bags-beige-isolated-background-ecommerce-online-shopping-concept_555986-1667.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.banner:nth-child(2) {
+  background: url(https://www.livemint.com/lm-img/img/2023/12/29/1600x900/smartwatch_girl_cleanup_1703841794354_1703841809788.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner2 h2 {
+
+  font-size: 38px;
+  line-height: 54px;
+
+  color: #fff;
+}
+
+.banner2 h3 {
+  color: #ec5600;
+}
+
+.banner2:nth-child(1) {
+  background: url(https://img.freepik.com/free-photo/front-view-young-female-holding-red-sale-writing-yellow-wall_140725-98638.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner2:nth-child(2) {
+  background: url(https://watermark.lovepik.com/photo/20211127/large/lovepik-fashion-girls-with-shopping-bags-picture_501157949.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  justify-content: center;
+
+}
+
+.banner2:nth-child(2) h2 {
+  font-size: 23px;
+}
+
+.banner2:nth-child(3) {
+  background: url(https://c.ndtvimg.com/2022-05/isjv5tio_fashion-sale345_295x200_02_May_22.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+}

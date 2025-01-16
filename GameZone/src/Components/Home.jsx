@@ -4,8 +4,9 @@ import './Home.css';
 
 const Home = () => {
   const [searched, setsearched] = useState("");
-  const [products, setProducts] = useState([]);
-  const [showFilter, setShowFilter] = useState(false);
+  const [products, setProducts] = useState([]); 
+  const [loading, setLoading] = useState("Loading"); 
+  const [showFilter, setShowFilter] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(500)
@@ -13,6 +14,11 @@ const Home = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [selectedCard, setSelectedCard] = useState(null);
   
+ useEffect(()=>{
+    window.scrollTo({top:0,left:0})
+  },[])
+
+
   // Function to filter products by category
   const filterByCategory = (category) => {
     const filtered = products.filter((product) => product.category === category);
@@ -29,20 +35,24 @@ const Home = () => {
     setFilteredProducts(filteredBySearch);
   }
 
-  // Fetch data from Firebase Api
-  const fetchdata = async () => {
+   // fetching data
+  const fetchData = async () => {
     try {
+      setLoading(true); // Start loading
       const response = await axios.get('https://shre-5279e-default-rtdb.firebaseio.com/Products.json');
       const productsData = Object.values(response.data);
-      setProducts(productsData); 
-      setFilteredProducts(productsData); 
+      setProducts(productsData);
+      setFilteredProducts(productsData);
     } catch (error) {
       console.log("Some error:", error);
+    } finally {
+      setLoading(false); // End loading
     }
   };
 
+
   useEffect(() => {
-    fetchdata();
+    fetchData();
   }, []);
 
 
@@ -74,11 +84,13 @@ function handleShowMore(){
   }
   
 
+
   return (
     <>
       <div className="button-container">
         <button onClick={() => setShowFilter(!showFilter)}>Filter</button>
         <input
+        id='search'
           type="text"
           value={searched}
           onChange={(e) => handleSearch(e.target.value)}
@@ -87,10 +99,21 @@ function handleShowMore(){
         />
       </div>
 
+
+    <div className='jsut_style'>
+     <p>Your favorite products,<br></br> just a click away!</p>
+    </div>
+
+
+
+
+
 {/* rendering the data  */}
 
       <div className="container">
-        {filteredProducts.slice(0,visibleItem).map((item, id) => (
+
+      {
+       filteredProducts.slice(0,visibleItem).map((item, id) => (
           <div key={id} className="card"  onClick={() => viewAllDetails(item)} >
             <img src={item.image} alt="Image is Not Available" className="card-image" />
             <div className="card-content">
@@ -177,6 +200,37 @@ function handleShowMore(){
 ) : ""}
 
 
+<div className="banners-cont">
+                <div className="banners">
+                    <div className="banner">
+                        <h4>Crazy Deals</h4>
+                        <h2>Buy 1 Get 1 Free</h2>
+                        <span>The best classic dress is on sale at shop.my</span>
+                        <div className="explorebtn">Learn more</div>
+                    </div>
+                    <div className="banner">
+                        <h4>Spring/Summer</h4>
+                        <h2>Upcoming Season</h2>
+                        <span>The best classic dress is on sale at shop.my</span>
+                        <div className="explorebtn">Collection</div>
+
+                    </div>
+                </div>
+                <div className="banners">
+                    <div className="banner2">
+                        <h2>Seasonal Sale</h2>
+                        <h3>Winter collection -50% Off</h3>
+                    </div>
+                    <div className="banner2">
+                        <h2>New Footwear collection</h2>
+                        <h3>Spring / Summer 2024</h3>
+                    </div>
+                    <div className="banner2">
+                        <h2>T-Shirts</h2>
+                        <h3>New Trendy Prints</h3>
+                    </div>
+                </div>
+            </div>
 
     </>
   );
