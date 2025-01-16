@@ -7,7 +7,6 @@ import p5 from '../assets/p5.png'
 import p1Main from '../assets/p1Main.png'
 import port from '../assets/port.png'
 import portC from '../assets/portC.png'
-import portP from '../assets/portP.png'
 import resp from '../assets/resp.png'
 
 const Projects = () => {
