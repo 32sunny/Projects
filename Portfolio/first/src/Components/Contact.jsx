@@ -2,24 +2,39 @@ import React, { useState } from "react";
 import "./ContactForm.css"; 
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [result, setResult] = React.useState("");
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "924ead74-c384-4b80-95b1-8b35a12f152e");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Form submission logic (e.g., API call)
-    console.log("Form data submitted:", formData);
-  };
-
   return (
+    
+    <>
+ 
+
     <div id="contact" className="contact-form-container">
+     
+  
+
       <div className="contact-info">
         <h2 className="contact-title">Let's Get in Touch</h2>
         <p className="contact-description">
@@ -45,42 +60,47 @@ const ContactForm = () => {
             </span>{" "}
             +91 7814851430
           </p>
+          
+          <a href="https://www.linkedin.com/in/sunny-mourya-a5a22a326/" target="_blank">
+            <img src="https://media.licdn.com/dms/image/v2/D4D12AQFSkkazpND0Tg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1696901179396?e=2147483647&v=beta&t=sg_aDp3g51FrQdFdKqc_c7Lz249Igbl5buOJvCcRzEY" alt="linkdin" className="icon"/>
+          </a>
+          <a href="https://github.com/32sunny" target="_blank" rel="noopener noreferrer">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s" alt="github" className="icon"/>
+          </a>
+         
         </div>
+        
       </div>
-      <form onSubmit={handleSubmit} className="contact-form">
-        <h1>Send message</h1><br></br>
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          className="form-input"
-          value={formData.name}
-          onChange={handleChange}
-          required
-        />
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          className="form-input"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          className="form-textarea"
-          rows="5"
-          value={formData.message}
-          onChange={handleChange}
-          required
-        ></textarea>
-        <button type="submit" className="form-button">
-          Send Message
-        </button>
+     
+      <form onSubmit={onSubmit} className="contact-form " >
+     
+      
+
+  
+
+
+        <input className="form-input" 
+        type="text" 
+        placeholder="Enter your name"
+        name="name" 
+        required/>
+        <input className="form-input"
+        placeholder="Enter Email"
+         type="email" 
+         name="email"
+          required/>
+        <textarea 
+        className="form-textarea" 
+        placeholder="Enter your messagae"
+        name="message" 
+        required></textarea>
+
+        <button className="form-button" type="submit">Submit Form</button>
+
       </form>
-    </div>
+      </div>
+  
+    </>
   );
 };
 

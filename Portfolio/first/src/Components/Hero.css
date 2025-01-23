@@ -1,5 +1,57 @@
+/* Hero.css */
+.Hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0px 40px;
+    background-color: #f4f4f9; /* Light background */
+ 
+  }
+  
+  .wave-container {
+    flex: 1;
+    max-width: 60%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 28px;
+    color: #323636;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .wave-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  
+  .wave-container h5 {
+  color: rgb(95, 86, 86);
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  
+  .wave-container .wave-text {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .wave-container h1 span {
+    font-size: 60px;
+    color: #116e36;
+  }
+  
+  .heroconnect {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
 
-  /* Keyframes for the fade-in effect */
+  }
+  
+
   @keyframes fadeIn {
     0% {
       opacity: 0;
@@ -10,191 +62,173 @@
       transform: translateY(0);
     }
   }
-  
-
-.profile{
-    height: inherit;
-   border-radius: 100%;
-
-}
-
-.myprofile{
-  margin-top: 50px;
-    height: 300px;
-    width: 300px;
-    animation: fadeIn 2s ease-out forwards;
-     border-radius: 100%; 
-}
-
-.Hero h1{
-    text-align: center;
-    width: 70%;
-    font-size: 70px;
-    font-weight: 600;
-    animation: fadeIn 2s ease-out forwards;
-}
-
-.Hero{
+  .myprofile {
+    flex: 1;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 35px;
-    background-image: url('https://www.shutterstock.com/image-photo/blank-black-corporate-stationery-on-600nw-1051434977.jpg');
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: overlay;
-  animation: fadeIn 2s ease-out forwards;
+    justify-content: center;
 
-}
-.Hero h1 span{
-   background: linear-gradient(270deg , rgb(9, 132, 56) 15% , rgb(13, 41, 133) 100%);
-   background-clip: text;
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   animation: fadeIn 2s ease-out forwards;
-    } 
-
-
-.Hero p{
-    width: 50%;
-    text-align: center;
-    font-size: 18px;
-    color: rgb(205, 187, 187);
-    font-family: 'Courier New', monospace; 
-    animation: fadeIn 2s ease-out forwards;
-}
-.hero-action{
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  font-size: 24px;
-  font-weight: 500px;
-  margin-bottom: 50px;
-  animation: fadeIn 2s ease-out forwards;
-}
-
-.heroconnect{
-    font-size: 18px;
-    padding: 12px 40px;
+  }
+  
+  .myprofile .profile {
+    width: 300px;
+    height: 350px;
     border-radius: 50px;
-    cursor: pointer;
-    background: rgb(94,93,105);
-    background: linear-gradient(82deg, rgba(94,93,105,1) 0%, rgba(64,61,101,1) 0%, rgba(31,29,55,1) 0%, rgb(21, 171, 56) 28%, rgb(53, 0, 160) 100%);
-    transition: 0.5s;
-}
-
-.heroconnect a{
-  text-decoration: none;
-  color: white;
-}
-.heroconnect:hover{
-    transform: scale(1.05);
-}
-
+    object-fit: cover;
+    border: 5px solid #a0f7b9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
  
-.My-resume{
-    font-size: 18px;
-    padding: 12px 2px;
-    border-radius: 50px;
-    cursor: pointer;
-    color: rgb(43, 119, 125);
-    border:2px solid  rgb(43, 119, 125);
-    background: none;
-}
-
-.My-resume a{   
-    padding: 12px 40px;
-    border-radius: 50px;
-    color: rgb(43, 119, 125); ;
-}
-.My-resume a:hover{
-    color: rgb(140, 27, 138);
-}
-.My-resume:hover{
-    color: rgb(140, 27, 138);
-    border:2px solid rgb(140, 27, 138);
-}
-
-
-@media (max-width: 768px) {
-    .profile {
-      height: 200px;
-      width: 200px;
-    }
+  }
   
-    .myprofile {
-      height: 200px;
-      width: 200px;
-      border: 3px solid rgb(9, 98, 98);
-    }
-  
-    .Hero h1 {
-      font-size: 40px;
-      width: 90%;
-    }
-  
-    .Hero p {
-      font-size: 16px;
-      width: 90%;
-    }
-  
-    .hero-action {
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .Hero {
       flex-direction: column;
-      gap: 15px;
+      text-align: center;
+      height: auto;
+    }
+  
+    .wave-container {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .wave-container h1 {
+      font-size: 32px;
+    }
+  
+    .wave-container h1 span {
+      font-size: 40px;
+    }
+  
+    .wave-container .wave-text {
       font-size: 20px;
     }
   
-    .heroconnect {
+    .heroconnect a {
       font-size: 16px;
-      padding: 10px 30px;
+      padding: 8px 16px;
     }
   
-    .My-resume {
-      font-size: 16px;
-      padding: 10px 5px;
+    .myprofile .profile {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Hero {
+      padding: 20px;
     }
   
-    .My-resume a {
-      padding: 10px 30px;
+    .wave-container h1 {
+      font-size: 28px;
+    }
+  
+    .wave-container h1 span {
+      font-size: 36px;
+    }
+  
+    .wave-container .wave-text {
+      font-size: 18px;
+    }
+  
+    .myprofile .profile {
+      width: 200px;
+      height: 200px;
     }
   }
   
   @media (max-width: 480px) {
-    .profile {
-      height: 150px;
+    .wave-container h1 {
+      font-size: 24px;
+    }
+  
+    .wave-container h1 span {
+      font-size: 32px;
+    }
+  
+    .wave-container .wave-text {
+      font-size: 16px;
+    }
+  
+    .heroconnect a {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .myprofile .profile {
       width: 150px;
-    }
-  
-    .myprofile {
       height: 150px;
-      width: 150px;
-    }
-  
-    .Hero h1 {
-      font-size: 30px;
-    }
-  
-    .Hero p {
-      font-size: 14px;
-    }
-  
-    .hero-action {
-      font-size: 18px;
-    }
-  
-    .heroconnect {
-      font-size: 14px;
-      padding: 8px 20px;
-    }
-  
-    .My-resume {
-      font-size: 14px;
-      padding: 8px 2px;
-    }
-  
-    .My-resume a {
-      padding: 8px 20px;
     }
   }
   
+  
+.wave-text {
+    display: inline -block;
+    
+  }
+  p .wave-text {
+    font-size: 24px;
+    color: #4a39d1;
+  }
+ 
+
+  .wave-text::before {
+    content: "👋";
+    font-size: 48px;
+    display: inline-block;
+    margin-right: 8px;
+    animation: wave-animation 1.5s infinite;
+  }
+  
+  /* Waving animation */
+  @keyframes wave-animation {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    75% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .see{
+    border: 2px solid  #0d6b33;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;  
+    font-size: 18px;
+    color: white;
+    transition: background-color 0.3s ease;
+    background-color:  #0d6b33;
+  }
+
+    
+  .see:hover{
+    background-color:  #ffffff;
+    color:  #0d6b33;
+  }
+
+    
+  .see2{
+    border: 2px solid  #0d6b33;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;  
+    font-size: 18px;
+    color: #0d6b33;
+    transition: background-color 0.3s ease;
+    background-color:  #ffffff;
+  }
+
+      
+  .see2:hover{
+    background-color:  #0d6b33;
+    color:  #ffffff;
+  }

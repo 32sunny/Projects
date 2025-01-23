@@ -1,29 +1,30 @@
+
+
+/* Smooth Scrolling and Scroll Padding */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* Offset to prevent hidden sections */
 }
 
+/* Navbar Styling */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url('https://www.shutterstock.com/image-photo/blank-black-corporate-stationery-on-600nw-1051434977.jpg');
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  background-blend-mode: overlay;
+  background-color: rgba(4, 229, 169, 0.6);
   position: sticky;
-  top:0px ;
-  margin: 0;
+  top: 0;
   z-index: 1000;
   padding: 10px 100px;
-  box-shadow: 0px 0px 4px rgb(96, 88, 157);
-
+  box-shadow: 0px 4px 8px rgba(96, 88, 157, 0.7);
+  
 }
- 
+
+/* Navbar Logo/Text */
 .navbar p {
   font-size: 38px;
   font-weight: 600;
-  background: linear-gradient(270deg, rgb(5, 84, 34) 15%, rgb(115, 210, 211) 100%);
+ background-color: rgb(1, 1, 1);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -32,42 +33,41 @@ html {
 }
 
 .navbar p:hover {
-  transform: scale(1.2);
+  transform: scale(1.2) rotate(2deg);
 }
 
+/* Navbar Menu */
 .navMenu {
   display: flex;
- 
   align-items: center;
-  border-radius: 50px;
-  cursor: pointer;
-  background: rgb(94,93,105);
-  background: linear-gradient(82deg, rgb(47, 42, 102) 0%, rgba(64,61,101,1) 0%, rgb(94, 161, 161) 0%, rgb(12, 88, 36) 28%, rgba(31,8,66,1) 100%);
-  z-index: 1000;
+  list-style: none;
+  gap: 20px;
 }
 
 .navMenu li {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: bold;
-  list-style: none;
   padding: 10px 20px;
   transition: all 0.5s;
 }
 
+.navMenu li:hover {
+  transform: translateY(-5px);
+  background-color: rgba(3, 3, 3, 0.2);
+  border-radius: 10px;
+}
+
 .navMenu li a {
   text-decoration: none;
-  color: rgb(224, 221, 221);
-  font-size: 18px;
-  font-weight: bold;
-  transition: all 0.5s;
+  color: rgb(2, 2, 2);
+  transition: all 0.3s;
 }
 
 .navMenu li a:hover {
-  border-radius: 50px;
-  color: rgb(140, 236, 161);
-  transform: scale(1.1);
+  color: rgb(2, 42, 11);
 }
 
+/* Burger Menu */
 .burger {
   display: none;
   flex-direction: column;
@@ -83,65 +83,82 @@ html {
   width: 25px;
   height: 3px;
   background-color: white;
+  border-radius: 2px;
   transition: all 0.3s ease;
 }
 
-.connect {
-  display: none;
+.navMenu.show {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background-color: rgba(233, 226, 226, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1500;
+  gap: 10px;
 }
 
+/* Scroll-to-Top Button */
 .scrollup {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
+  background-color: #ffffff;
   color: white;
-  border: none;
   font-size: 20px;
   padding: 10px 15px;
-  border-radius: 50px;
+  border-radius: 50%;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
   transition: all 0.3s ease;
-  opacity: 0.8;
+}
+
+.scrollup.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .scrollup:hover {
   background-color: #0056b3;
-  opacity: 1;
 }
 
-.scrollup:active {
-  transform: scale(0.95);
-}
-
+/* Responsive Styling */
 @media screen and (max-width: 768px) {
+  .burger {
+      display: flex;
+      right: 45px;
+  }
+
   .navMenu {
-    display: none;
-    flex-direction: column;
-    position: fixed; 
-    top: 60px; 
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 150px;
-    border-radius: 10px;
-    z-index: 1500; /* Ensures it stays above other content */
+      display: none;
   }
 
   .navMenu.show {
-    display: flex;
-  }
-
-  .burger {
-    display: flex;
-  }
-
-  .connect {
-    display: block;
+      display: flex;
   }
 }
 
-@media screen and (max-width: 310px) {
+@media screen and (max-width: 480px) {
   .navbar {
-       padding: 0;
+      padding: 10px 20px;
+  }
+
+  .navMenu li {
+      font-size: 16px;
+      padding: 5px 10px;
+  }
+
+  .burger div {
+      width: 20px;
   }
 }
+
+/* Wave.css */
+.wave-container {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+

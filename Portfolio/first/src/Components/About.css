@@ -1,198 +1,107 @@
-.about{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+/* About.css */
+.about {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #fff8f8;
 
+}
+.anoutme{
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
 }
 
 .about-title{
-   width: 50%;
-   text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.about-title h1{
-    font-size: 50px;
-    color: rgb(18, 241, 226);
+.about-title h1 {
+  font-size: 2.5rem;
+  color: green;
 }
 
-.about-title h1 span{
-    color: rgb(0, 0, 0);
-    font-size: 70px;
+
+.about-para {
+  background-color: #f9f9f9;
+  padding: 40px;
+  border-radius: 8px; 
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  line-height: 1.6;
+  animation: fadeIn 2s ease-out;
 }
 
-.tools{
-  color: rgb(18, 241, 226);
-   font-weight: 600px;
-  font-size: 40px;
-} 
-
-.about-selection{
-    padding:50px 200px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.about-para p {
+ width: 700px;
+ font-size: 20px;
 }
 
-.about-right{
-    text-align: center;
+.education {
+  flex: 1;
+  min-width: 300px;
 }
 
-.about-para p{
-
-    font-size: 20px;
-    color: rgb(199, 194, 210); 
-  padding: 10px;
-  background-color: transparent; 
-  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+.education h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #444;
 }
 
-.about-para p:hover{
-    transform: scale(1.1);
-    box-shadow: 0 4px 8px rgba(81, 89, 196, 0.3); 
+.education ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.education{
+.education li {
+  background-color: #f1f1f1;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
-  text-align: center ;
-   h2{
-    color: aqua;
-    font-size: 36px;
-    padding: 50px 0px;
-   }
-   ul{
-    display: flex;
-gap: 50px;
+.education li strong {
+  font-size: 1.2rem;
+  color: #222;
+}
 
-    li{
-      background-image: url('https://thumbs.dreamstime.com/b/black-pencil-drawing-line-white-background-336130587.jpg');
-      background-size: cover;
-      background-repeat: none;
-      background-position: center;
-      background-color: rgba(0, 0, 0, 0.5);
-      background-blend-mode: overlay; 
-      width: 300px;
-      list-style: none;
-      padding: 20px;
-      color: bisque;
-      cursor: pointer;
-      transition: 0.5s;
-      strong{
-        color: rgb(28, 241, 117);
-        font-size: 20px;
-      }
-    }
-   }
-   li:hover{
-     transform: scale(1.1);
-   }
+.wave-start::before {
+  content: "⭐";
+  font-size: 23px;
+  display: inline-block;
+  margin-right: 8px;
+  animation: wave-animation 1.5s infinite;
 }
 
 
 
+/* Responsive Design */
 @media (max-width: 768px) {
-  .about {
-    padding-top: 40px;
-  }
-
-  .about-title {
+  .about-para {
     width: 90%;
-  }
 
-  .about-title h1 {
-    font-size: 40px;
-  }
-
-  .about-title span {
-    font-size: 60px;
-  }
-
-  .about-selection {
-    padding: 20px 50px;
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .about-right {
-    padding: 20px;
   }
 
   .about-para p {
-    font-size: 16px;
+    width: 100%;
+    font-size: 0.9rem;
   }
 
-  .skills-container {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
-    padding: 10px;
-  }
-
-  .skill-item {
-    width: 90px;
-    height: 130px;
-  }
-
-  .skill-item img {
-    width: 70px;
-    height: 70px;
+  .education li {
+    font-size: 0.9rem;
   }
 }
+
 @media (max-width: 480px) {
-  .about {
-    padding: 20px 10px; /* Reduced padding for smaller screens */
-    flex-direction: column;
-  }
-
-  .about-title {
-    width: 100%;
-    text-align: center;
-  }
-
   .about-title h1 {
-    font-size: 28px; /* Adjusted font size */
-  }
-
-  .about-title span {
-    font-size: 40px; /* Adjusted font size */
-  }
-
-  .about-selection {
-    flex-direction: column;
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .about-right {
-    text-align: center;
-    padding: 10px 5px;
-  }
-
-  .about-para p {
-    font-size: 14px; /* Reduced font size */
-    line-height: 1.6; /* Increased line height for readability */
-  }
-
-  .education {
-    text-align: center;
-    padding: 20px 5px;
+    font-size: 2rem;
   }
 
   .education h2 {
-    font-size: 24px; /* Smaller heading font size */
+    font-size: 1.5rem;
   }
 
-  .education ul {
-    flex-direction: column;
-    gap: 15px;
-    padding: 0;
-  }
-
-  .education ul li {
-    width: 100%; /* Full width for smaller screens */
-    padding: 10px;
-    font-size: 14px; /* Adjusted font size */
-  }
-
-  .education ul li strong {
-    font-size: 16px; /* Emphasize strong text */
+  .education li strong {
+    font-size: 1rem;
   }
 }
