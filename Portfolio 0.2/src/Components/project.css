@@ -313,3 +313,88 @@
 .showMore:hover {
   background-color: rgb(9, 67, 51);
 }
+
+.train-container {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  align-items: center;
+  background-color: white;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.train {
+  display: flex;
+  gap: 10px;
+  animation: moveTrain 15s linear infinite;
+  font-size: 25px;
+}
+
+.train-box {
+  width: 50px;
+  height: 30px;
+  background-color: #4b8bbe;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.train-message {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: moveRight 5s linear infinite;
+}
+
+@keyframes moveTrain {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+/* marquee {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+ 
+  overflow: hidden;
+ 
+ 
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+} */

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './project.css';
+import { Train, Home, Sparkles } from "lucide-react";
 import p2 from '../assets/p2.png'
 import p3 from '../assets/p3.png'
 import p4 from '../assets/p4.png'
@@ -14,6 +15,8 @@ import Main_H from '../assets/Main_H.png'
 import h1 from '../assets/h1.png'
 import h2 from '../assets/h2.png'
 import h3 from '../assets/h3.png'
+
+
 
 
 
@@ -98,7 +101,7 @@ const Projects = () => {
        <img
          src={main}
          alt='Main Project'
-         
+          
        />
      </div>
      <h2>Sweet Home Real Estate</h2>
@@ -151,7 +154,7 @@ Utilized Firebase to manage data, enabling a seamless user experience.
        />
      </div>
      <h2>Your PLace</h2>
-     {showDetails2 ?<p className='showMore' onClick={toggleDetails}> Hide  </p>: <p className='showMore' onClick={toggleDetails}>  Show more...  </p> }
+     {showDetails2 ? <p className='showMore' onClick={toggleDetails}> Hide  </p>: <p className='showMore' onClick={toggleDetails}>  Show more...  </p> }
      {showDetails1 && (
        <>
        <div className='code' ><a href='https://super-trifle-c14783.netlify.app/' target='blank'> Check Live Site</a> <a href='https://github.com/32sunny/Projects/tree/main/GameZone' target='blank'> 
@@ -184,7 +187,27 @@ Utilized Firebase to manage data, enabling a seamless user experience.
    </div>
 
 
-  
+   <div className='project-card'>
+
+    
+     {/* <marquee><Train size={32} color="black" />Coming soon....</marquee> */}
+     <div className="train-container">
+      <div className="train">🚂
+        <div className="train-box">C</div>
+        <div className="train-box">O</div>
+        <div className="train-box">M</div>
+        <div className="train-box">I</div>
+        <div className="train-box">N</div>
+        <div className="train-box">G</div>
+        <div className="train-box" style={{background:"white"}} ></div>
+        <div className="train-box">S</div>
+        <div className="train-box">O</div>
+        <div className="train-box">O</div>
+        <div className="train-box">N</div>
+      </div>
+    
+    </div>
+   </div>
 
 </div>
 

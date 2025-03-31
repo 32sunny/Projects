@@ -10,7 +10,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-background-color: rgb(40, 198, 140);
+background-color: rgb(19, 93, 66);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -23,7 +23,7 @@ background-color: rgb(40, 198, 140);
 .navbar p {
   font-size: 38px;
   font-weight: 600;
- background-color: rgb(1, 1, 1);
+ background-color: rgb(28, 213, 145);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -58,13 +58,10 @@ background-color: rgb(40, 198, 140);
 
 .navMenu li a {
   text-decoration: none;
-  color: rgb(2, 2, 2);
+  color: rgb(234, 218, 218);
   transition: all 0.3s;
 }
 
-.navMenu li a:hover {
-  color: rgb(2, 42, 11);
-}
 
 /* Burger Menu */
 .burger {
