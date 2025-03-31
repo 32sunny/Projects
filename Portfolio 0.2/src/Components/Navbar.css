@@ -1,0 +1,163 @@
+
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+background-color: rgb(40, 198, 140);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 100px;
+  box-shadow: 0px 4px 8px rgba(96, 88, 157, 0.7);
+  
+}
+
+/* Navbar Logo/Text */
+.navbar p {
+  font-size: 38px;
+  font-weight: 600;
+ background-color: rgb(1, 1, 1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  transition: all 0.7s;
+}
+
+.navbar p:hover {
+  transform: scale(1.2) rotate(2deg);
+}
+
+/* Navbar Menu */
+.navMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.navMenu li {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  transition: all 0.5s;
+}
+
+.navMenu li:hover {
+  transform: translateY(-5px);
+  background-color: rgba(3, 3, 3, 0.2);
+  border-radius: 10px;
+}
+
+.navMenu li a {
+  text-decoration: none;
+  color: rgb(2, 2, 2);
+  transition: all 0.3s;
+}
+
+.navMenu li a:hover {
+  color: rgb(2, 42, 11);
+}
+
+/* Burger Menu */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navMenu.show {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background-color: rgba(233, 226, 226, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  z-index: 1500;
+  gap: 10px;
+}
+
+/* Scroll-to-Top Button */
+.scrollup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  color: white;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.scrollup.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollup:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .burger {
+      display: flex;
+      right: 45px;
+  }
+
+  .navMenu {
+      display: none;
+  }
+
+  .navMenu.show {
+      display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+      padding: 10px 20px;
+  }
+
+  .navMenu li {
+      font-size: 16px;
+      padding: 5px 10px;
+  }
+
+  .burger div {
+      width: 20px;
+  }
+}
+
+/* Wave.css */
+.wave-container {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+}
+

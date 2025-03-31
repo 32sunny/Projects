@@ -1,0 +1,234 @@
+/* Hero.css */
+.Hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 0px 40px;
+    background-color: #f4f4f9; /* Light background */
+ 
+  }
+  
+  .wave-container {
+    flex: 1;
+    max-width: 60%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 28px;
+    color: #323636;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  .wave-container h1 {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  
+  .wave-container h5 {
+  color: rgb(95, 86, 86);
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+  
+  .wave-container .wave-text {
+    font-size: 24px;
+    color: #555;
+  }
+  
+  .wave-container h1 span {
+    font-size: 60px;
+    color: #116e36;
+  }
+  
+  .heroconnect {
+    margin-top: 20px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+
+  }
+  
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .myprofile {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .myprofile .profile {
+    width: 400px;
+    height: 350px;
+    border-radius: 50px;
+    object-fit: cover;
+    border: 5px solid #a0f7b9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+ 
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .Hero {
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+    }
+  
+    .wave-container {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .wave-container h1 {
+      font-size: 32px;
+    }
+  
+    .wave-container h1 span {
+      font-size: 40px;
+    }
+  
+    .wave-container .wave-text {
+      font-size: 20px;
+    }
+  
+    .heroconnect a {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .myprofile .profile {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .Hero {
+      padding: 20px;
+    }
+  
+    .wave-container h1 {
+      font-size: 28px;
+    }
+  
+    .wave-container h1 span {
+      font-size: 36px;
+    }
+  
+    .wave-container .wave-text {
+      font-size: 18px;
+    }
+  
+    .myprofile .profile {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .wave-container h1 {
+      font-size: 24px;
+    }
+  
+    .wave-container h1 span {
+      font-size: 32px;
+    }
+  
+    .wave-container .wave-text {
+      font-size: 16px;
+    }
+  
+    .heroconnect a {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  
+    .myprofile .profile {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  
+  
+.wave-text {
+    display: inline -block;
+    
+  }
+  p .wave-text {
+    font-size: 24px;
+    color: #4a39d1;
+  }
+ 
+
+  .wave-text::before {
+    content: "👋";
+    font-size: 48px;
+    display: inline-block;
+    margin-right: 8px;
+    animation: wave-animation 1.5s infinite;
+  }
+  
+  /* Waving animation */
+  @keyframes wave-animation {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(20deg);
+    }
+    50% {
+      transform: rotate(-20deg);
+    }
+    75% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  .see{
+    border: 2px solid  #0d6b33;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;  
+    font-size: 18px;
+    color: white;
+    transition: background-color 0.3s ease;
+    background-color:  #0d6b33;
+  }
+
+    
+  .see:hover{
+    background-color:  #ffffff;
+    color:  #0d6b33;
+  }
+
+    
+  .see2{
+    border: 2px solid  #0d6b33;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;  
+    font-size: 18px;
+    color: #0d6b33;
+    transition: background-color 0.3s ease;
+    background-color:  #ffffff;
+  }
+
+      
+  .see2:hover{
+    background-color:  #0d6b33;
+    color:  #ffffff;
+  }
