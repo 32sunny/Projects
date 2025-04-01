@@ -22,7 +22,9 @@ const About = () => {
 
             <div className="about-para">
 
-            <p><span className="wave-start"></span> {" "}I specialize in React and Node.js, confidently building software independently.My passion for learning and determination have driven my success in web development.I thrive on building clean, intuitive designs that not only meet client expectations but also enhance user engagement.</p><br /><br />
+            <p><span className="wave-start"></span> {" "}I am a Full Stack MERN Developer specializing in React and Node.js.
+             With a strong passion for learning and problem-solving, I confidently build software solutions independently. I thrive on creating clean, 
+            intuitive, and user-friendly designs that exceed client expectations and enhance user engagement.</p><br /><br />
 
             </div>
         

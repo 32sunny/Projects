@@ -1,14 +1,17 @@
-/* Hero.css */
+
 .Hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 100vh;
     padding: 0px 40px;
-    background-color: #f4f4f9; /* Light background */
+    background-color: #f4f4f9; 
  
   }
   
+
+
+
   .wave-container {
     flex: 1;
     max-width: 60%;
